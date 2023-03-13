@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,300&display=swap');
+
+:root {
+   --maincolor: rgb(52, 107, 151);
+   --audiocolorbuttons: linear-gradient(180deg, rgb(58, 119, 170), rgb(55, 109, 154));
+   --audiocolorbuttonshover: rgb(245, 64, 64);
+   --itemcolor: linear-gradient(180deg, rgb(58, 119, 170), rgb(55, 109, 154));
+   --itemcolorhover: linear-gradient(180deg, rgb(72, 140, 196), rgb(67, 128, 177));
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+}
+body {
+   background-image: linear-gradient(rgb(255, 255, 255), rgb(241, 241, 241));
+   background-size: cover;
+   background-repeat: no-repeat;
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+header {
+   background-color: var(--maincolor);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   font-size: 25px;
+   padding: 10px 0;
+   color: rgb(238, 238, 238);
+   width: 100%;
+}
+
+.buttons-div {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.buttons-div button {
+   width: 90px;
+   height: 40px;
+   margin: 10px;
+   border: 0px solid rgb(26, 26, 26);
+   background: var(--audiocolorbuttons);
+   border-radius: 2px;
+   font-size: 22px;
+   cursor: pointer;
+   color: white;
+}
+
+.buttons-div button:hover {
+   background: var(--audiocolorbuttonshover)
+}
+
+main {
+   margin: 0 auto;
+   width: 600px;
+   background-color: rgb(241, 240, 240);
+   display: grid;
+   grid-template-columns: repeat(6,1fr);
+   grid-template-rows: repeat(7,1fr);
+   border: 1px solid rgb(82, 54, 40);
+   border-radius: 10px;
+}
+
+.itemfret, .itemstring { 
+   width: 43px;
+   height: 43px;
+   margin: 15px;
+   border: 1px solid gray;
+   border-radius: 30px;
+   background-color: rgb(249, 249, 249);
+   display: flex;
+   font-size: 16px;
+   justify-content: center;
+   align-items: center;
+ }
+
+.item { 
+   width: 70px;
+   height: 50px;
+   margin: 15px;
+   border: 0px solid rgb(26, 26, 26);
+   color: rgb(253, 253, 253);
+   background: var(--itemcolor);
+   border-radius: 4px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 18px;
+   cursor: pointer;
+ }
+
+ .item:hover {
+   background: var(--itemcolorhover);
+ }
+
+.fret-no-6 {
+   grid-area: 1/2/2/3;
+}
+.fret-no-7 {
+   grid-area: 1/3/2/4;
+}
+.fret-no-8 {
+   grid-area: 1/4/2/5;
+}
+.fret-no-9 {
+   grid-area: 1/5/2/6;
+}
+.fret-no-10 {
+   grid-area: 1/6/2/7;
+}
+
+.string-no-1 {
+   grid-area:2/1/3/2;
+}
+.string-no-2 {
+   grid-area:3/1/4/2;
+}
+.string-no-3 {
+   grid-area:4/1/5/2;
+}
+.string-no-4 {
+   grid-area:5/1/6/2;
+}
+.string-no-5 {
+   grid-area:6/1/7/2;
+}
+.string-no-6 {
+   grid-area:7/1/8/2;
+}
+
+ .sound-number-1 {
+    grid-area: 7 / 3 / 8 / 4 ; 
+ }
+
+ .sound-number-2 {
+    grid-area: 7 / 5 / 8 / 6 ;
+ }
+ 
+ .sound-number-3 {
+    grid-area: 7 / 6 / 8 / 7;
+ }
+
+ .sound-number-4 {
+    grid-area: 6/3/7/4;
+ }
+
+ .sound-number-5 {
+    grid-area: 6/5/7/6;
+ }
+
+ .sound-number-6 {
+    grid-area: 5/3/6/4;
+ }
+
+ .sound-number-7 {
+    grid-area: 5/5/6/6;
+ }
+
+ .sound-number-8 {
+    grid-area: 4/2/5/3;
+ }
+
+ .sound-number-9 {
+    grid-area: 4/3/5/4;
+ }
+
+ .sound-number-10 {
+    grid-area: 4/5/5/6;
+ }
+
+ .sound-number-11 {
+    grid-area: 3/3/4/4;
+ }
+
+ .sound-number-12 {
+    grid-area: 3/4/4/5;
+ }
+
+ .sound-number-13 {
+    grid-area: 3/6/4/7;
+ }
+
+ .sound-number-14 {
+    grid-area: 2/3/3/4;
+ }
+
+ .sound-number-15 {
+    grid-area: 2/5/3/6;
+ }
+
+ .sound-number-16 {
+    grid-area: 2/6/3/7;
+ }
+
+
+ footer {
+   padding: 10px 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 16px;
+   background-color: var(--maincolor);
+   color: rgb(235, 234, 234);
+   flex-direction: column;
+   width: 100%;
+   /* -webkit-box-shadow: 0px -1px 10px 0px rgba(000, 000, 000, 0.8);
+   -moz-box-shadow: 0px -1px 10px 0px rgba(000, 000, 000, 0.8);
+   box-shadow: 0px -1px 10px 0px rgba(000, 000, 000, 0.8); */
+}
+
+footer a {
+   text-decoration: none;
+   color: rgb(228, 228, 228);
+}
+
+
+
+
+.rwd-info {
+   display: none;
+}
+
+/* 1024? */
+@media (max-width: 768px) {
+   header {
+      display: none;
+   }
+   .buttons-div {
+      display: none;
+   }
+   main {
+      display: none;
+   }
+   footer {
+      display: none;
+   }
+
+   body {
+      background: none;
+      width: 80%;
+      margin: 0 auto;
+      padding-top: 20px;
+   }
+
+   .rwd-info {
+      display: flex; 
+      color:black;
+      /* text-align: center; */
+      text-align: justify;
+      font-size: 14px;
+   }
+}
